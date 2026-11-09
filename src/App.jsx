@@ -1,0 +1,11 @@
+import { Navigate, Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
+import HomePage from './pages/HomePage'
+import ShopPage from './pages/ShopPage'
+import ProductPage from './pages/ProductPage'
+import SellPage from './pages/SellPage'
+import CartPage from './pages/CartPage'
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import WishlistPage from './pages/WishlistPage'
+export default function App() { return <Routes><Route element={<Layout />}><Route path="/" element={<HomePage />} /><Route path="/shop" element={<ShopPage />} /><Route path="/product/:id" element={<ProductPage />} /><Route path="/sell" element={<SellPage />} /><Route path="/cart" element={<CartPage />} /><Route path="/wishlist" element={<WishlistPage />} /><Route path="/about" element={<AboutPage />} /><Route path="/contact" element={<ContactPage />} /><Route path="*" element={<Navigate to="/" replace />} /></Route></Routes> }
