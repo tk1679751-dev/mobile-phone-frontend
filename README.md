@@ -26,3 +26,5 @@ MobiMart is a modern mobile phone marketplace frontend built for buying, selling
 ```bash
 npm install
 npm run dev
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/31e5984c-1dfa-47f7-9d27-e0bd23fae8c7/deploy-status)](https://app.netlify.com/projects/mobilemartjazzy/deploys)
